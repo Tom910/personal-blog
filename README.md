@@ -1,5 +1,6 @@
-# AstroPaper 📄
+# Personal blog 📄
 
+Performance, WEB, infrastructure will live here
 
 ## Backlog topics
 - React SSR performance
