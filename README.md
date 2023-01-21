@@ -5,9 +5,11 @@ Performance, WEB, infrastructure will live here
 ## Backlog topics
 - React SSR performance
   - load data - parallel, cache data, dedup, keep-alive
+  - event loop
   - cache for calculation
   - render only critical parts
   - deadlines
+  - problem between CPU bound and IO bound in the same time
 - Observibility Web aplication
   - log errors
   - network errors
