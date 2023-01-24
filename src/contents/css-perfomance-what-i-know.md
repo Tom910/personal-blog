@@ -1,7 +1,7 @@
 ---
 author: Andrey Marchenko
 datetime: 2023-01-15T10:00:00Z
-title: CSS perfomance. What I know. Checklist
+title: CSS Delivery perfomance. What I know. Checklist
 slug: css-perfomance-what-i-know
 featured: true
 draft: false
@@ -207,3 +207,6 @@ In my experience CSS always grow size because we usually add new functionality, 
 
 
 If you know other ways to improve CSS perfomance, please share it in [trwitter](https://twitter.com/Tom910ru)
+
+## What is next?
+- [CSS runtime performance | Nolan Lawson | performance.now() 2022](https://www.youtube.com/watch?v=nWcexTnvIKI)

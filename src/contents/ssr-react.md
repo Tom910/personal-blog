@@ -15,9 +15,9 @@ description:
 ---
 
 
-  - load data - parallel, cache data, dedup, keep-alive
+  - load data - parallel, cache data, dedup, keep-alive, background update, cache first
   - event loop
-  - cache for calculation
+  - LRU cache for calculation
   - render only critical parts
   - deadlines
   - problem between CPU bound and IO bound in the same time
