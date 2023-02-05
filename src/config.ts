@@ -2,12 +2,12 @@ import type { SocialObjects } from "./types";
 
 export const SITE = {
   website: "https://amarchenko.dev/",
-  author: "Andrey Marchenko",
+  author: "Andrei Marchenko",
   desc: "Blog about IT and other stuff",
-  title: "Andrey Marchenko",
+  title: "Andrei Marchenko",
   ogImage: "",
   lightAndDarkMode: true,
-  postPerPage: 5
+  postPerPage: 5,
 };
 
 export const LOGO_IMAGE = {

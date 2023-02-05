@@ -1,5 +1,5 @@
 ---
-author: Andrey Marchenko
+author: Andrei Marchenko
 datetime: 2023-01-15T10:00:00Z
 title: CSS Delivery perfomance. What I know. Checklist
 slug: css-perfomance-what-i-know
