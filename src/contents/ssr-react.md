@@ -19,3 +19,4 @@ description: Optimizing CSS is a critical aspect of improving the performance of
 - render only critical parts
 - deadlines
 - problem between CPU bound and IO bound in the same time
+- 1 ms is matter. Example with worker on shop. If we add more actions what they need to do, they can do less thing in a minute

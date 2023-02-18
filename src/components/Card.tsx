@@ -1,5 +1,3 @@
-import { useEffect, useRef, useState } from "react";
-
 import Datetime from "./Datetime";
 import type { Frontmatter } from "src/types";
 
@@ -17,9 +15,6 @@ const styles = {
 };
 
 export default function Card({ href, post, secHeading = true }: Props) {
-  useEffect(() => {
-    console.log("render");
-  });
 
   return (
     <li className={styles.cardContainer}>
