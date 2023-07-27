@@ -1,66 +1,45 @@
 /** @type {import('tailwindcss').Config} */
-
-function withOpacity(variableName) {
-  return ({ opacityValue }) => {
-    if (opacityValue !== undefined) {
-      return `rgba(var(${variableName}), ${opacityValue})`;
-    }
-    return `rgb(var(${variableName}))`;
-  };
-}
-
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-  theme: {
-    // Remove the following screen breakpoint or add other breakpoints
-    // if one breakpoint is not enough for you
-    screens: {
-      sm: "640px",
-    },
-
-    // Uncomment the following extend
-    // if existing Tailwind color palette will be used
-
-    // extend: {
-    textColor: {
-      skin: {
-        base: withOpacity("--color-text-base"),
-        accent: withOpacity("--color-accent"),
-        inverted: withOpacity("--color-fill"),
-      },
-    },
-    backgroundColor: {
-      skin: {
-        fill: withOpacity("--color-fill"),
-        accent: withOpacity("--color-accent"),
-        inverted: withOpacity("--color-text-base"),
-        card: withOpacity("--color-card"),
-        "card-muted": withOpacity("--color-card-muted"),
-      },
-    },
-    outlineColor: {
-      skin: {
-        fill: withOpacity("--color-accent"),
-      },
-    },
-    borderColor: {
-      skin: {
-        line: withOpacity("--color-border"),
-        fill: withOpacity("--color-text-base"),
-        accent: withOpacity("--color-accent"),
-      },
-    },
-    fill: {
-      skin: {
-        base: withOpacity("--color-text-base"),
-        accent: withOpacity("--color-accent"),
-      },
-      transparent: "transparent",
-    },
-    fontFamily: {
-      sans: ['ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"']
-    },
-    // },
-  },
-  plugins: [require("@tailwindcss/typography")],
-};
+	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	theme: {
+		extend: {
+			typography: ({ theme }) => ({
+				DEFAULT: {
+					css: {
+						'code': {
+							'&:after': {
+								display: 'none',
+							},
+							'&:before': {
+								display: 'none',
+							},
+							'> .line::before': {
+								'content': 'counter(step)',
+								'counter-increment': 'step',
+								'margin-right': theme('spacing[4]'),
+								'display': 'inline-block',
+								'width': '1rem',
+								'font-size': '0.75rem',
+								'text-align': 'right',
+								'color': theme('colors.gray[300]')
+							},
+							'background-color': theme('colors.gray[200]'),
+							'padding': `0 ${theme('spacing[1]')}`,
+							'border-radius': theme("borderRadius.sm"),
+							'counter-reset': 'step',
+							'counter-increment': 'step 0',
+						},
+					}
+				}
+			})
+		},
+		fontFamily: {
+			'sans': ['sans-serif'],
+			'mono': ['monospace']
+		}
+	},
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/line-clamp'),
+	],
+}

@@ -1,24 +1,13 @@
-export interface Frontmatter {
-  title: string;
-  ogImage?: string;
-  description: string;
-  author: string;
-  datetime: string;
-  slug: string;
-  featured: boolean;
-  draft: boolean;
-  tags: string[];
+export interface LayoutProps {
+  title?: string;
+  description?: string;
 }
 
-export type SocialObjects = {
+export type Collection = "blog";
+
+export type SocialLink = {
   name: SocialMedia;
   href: string;
-  active: boolean;
-  linkTitle: string;
-}[];
-
-export type SocialIcons = {
-  [social in SocialMedia]: string;
 };
 
 export type SocialMedia =
@@ -26,7 +15,7 @@ export type SocialMedia =
   | "Facebook"
   | "Instagram"
   | "LinkedIn"
-  | "Mail"
+  | "Email"
   | "Twitter"
   | "Twitch"
   | "YouTube"

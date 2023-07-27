@@ -26,4 +26,4 @@ Performance, WEB, infrastructure will live here
 
 ---
 
-Based on https://github.com/satnaing/astro-paper
+Based on https://github.com/JfrAziz/jafaraziz.com
