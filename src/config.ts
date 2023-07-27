@@ -1,51 +1,24 @@
-import type { SocialObjects } from "./types";
+import type { SocialLink } from "./types";
 
 export const SITE = {
   website: "https://amarchenko.dev/",
   author: "Andrei Marchenko",
-  desc: "Blog about IT and other stuff",
+  description:
+    "I started developing for companies in 2012 and have seen the Web world before React, TS and current toolings set. During this time I have seen several generations of changes in the Web. In recent years, I have worked in a platform team that develops technical products for WEB developers and has supported a busy site in production using SSR with React. As a result, I got a lot of experience around performance, product development of internal solutions, SRE and development of large sites with 100+ developers",
   title: "Andrei Marchenko",
-  ogImage: "",
-  lightAndDarkMode: true,
-  postPerPage: 5,
 };
 
-export const LOGO_IMAGE = {
-  enable: false,
-  svg: true,
-  width: 216,
-  height: 46,
-};
-
-export const SOCIALS: SocialObjects = [
+export const SOCIALS: SocialLink[] = [
   {
     name: "Github",
     href: "https://github.com/Tom910",
-    linkTitle: ` ${SITE.title} on Github`,
-    active: true,
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/andrey-marchenko-48b44b151/",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
-  },
-  {
-    name: "Mail",
-    href: "mailto:tom910ru@gmail.com",
-    linkTitle: `Send an email to ${SITE.title}`,
-    active: true,
   },
   {
     name: "Twitter",
     href: "https://twitter.com/Tom910ru",
-    linkTitle: `${SITE.title} on Twitter`,
-    active: true,
-  },
-  {
-    name: "Telegram",
-    href: "https://t.me/tom910",
-    linkTitle: `${SITE.title} on Telegram`,
-    active: true,
   },
 ];

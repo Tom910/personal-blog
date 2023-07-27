@@ -1,0 +1,36 @@
+---
+import { SITE } from "config";
+import SocialLinks from "./SocialLinks";
+---
+
+<div id="hero" class="mb-12">
+  <div class="py-8">
+    <h1 class="space-y-2 lg:space-y-4">
+      <div class="text-2xl lg:text-6xl font-mono font-extrabold text-gray-800">
+        Hi, I am
+      </div>
+      <div class="relative">
+        <div class="text-4xl lg:text-5xl font-extrabold flex">
+          <div class="bg-gray-800 px-4 lg:px-8 text-white">{SITE.author}</div>
+        </div>
+      </div>
+    </h1>
+  </div>
+  <div class="prose">
+    <p>
+      I started developing for companies in 2012 and have seen the Web world
+      before React, TS and current toolings set. During this time I have seen
+      several generations of changes in the Web.
+    </p>
+    <p>
+      In recent years, I have worked in a platform team that develops technical
+      products for WEB developers and has supported a busy site in production
+      using SSR with React. As a result, I got a lot of experience around
+      performance, product development of internal solutions, SRE and
+      development of large sites with 100+ developers
+    </p>
+    <p>
+      You can also follow me on <SocialLinks />
+    </p>
+  </div>
+</div>

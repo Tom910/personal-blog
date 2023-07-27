@@ -1,36 +1,35 @@
-import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import react from "@astrojs/react";
-import remarkToc from "remark-toc";
-import remarkCollapse from "remark-collapse";
+import mdx from "@astrojs/mdx";
+import preact from "@astrojs/preact";
 import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import { defineConfig, sharpImageService } from "astro/config";
 
-// https://astro.build/config
 export default defineConfig({
+  compressHTML: true,
+  experimental: {
+    assets: true,
+  },
+  image: {
+    service: sharpImageService(),
+  },
   site: "https://amarchenko.dev/",
+  markdown: {
+    gfm: true,
+    shikiConfig: {
+      theme: "github-light",
+    },
+  },
   integrations: [
-    tailwind({
-      config: {
-        applyBaseStyles: false,
+    tailwind(),
+    mdx({
+      syntaxHighlight: "shiki",
+      shikiConfig: {
+        theme: "github-light",
       },
     }),
-    react(),
     sitemap(),
+    preact({
+      compat: true,
+    }),
   ],
-  markdown: {
-    remarkPlugins: [
-      remarkToc,
-      [
-        remarkCollapse,
-        {
-          test: "Table of contents",
-        },
-      ],
-    ],
-    shikiConfig: {
-      theme: "one-dark-pro",
-      wrap: true,
-    },
-    extendDefaultPlugins: true,
-  },
 });
