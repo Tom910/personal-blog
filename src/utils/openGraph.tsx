@@ -24,7 +24,7 @@ const Template = (props: OgData) => (
       backgroundImage:
         "radial-gradient(circle at 25px 25px, lightgray 2%, transparent 0%), radial-gradient(circle at 75px 75px, lightgray 2%, transparent 0%)",
       backgroundSize: "100px 100px",
-      fontFamily: "monospace",
+      fontFamily: "JetBrainsMono-Bold",
     }}
   >
     <div
@@ -58,7 +58,7 @@ const Template = (props: OgData) => (
             color: "#374151",
             flex: 1,
             display: "flex",
-            fontFamily: "sans-serif",
+            fontFamily: "PlusJakartaSans",
           }}
         >
           {props.title}
@@ -121,7 +121,20 @@ const generateOgImage = async (
     width: 600,
     height: 315,
     embedFont: true,
-    fonts: [],
+    fonts: [
+      {
+        name: "JetBrainsMono",
+        data: await readFile("./src/assets/font/JetBrainsMono-Bold.ttf"),
+        weight: 600,
+        style: "normal",
+      },
+      {
+        name: "PlusJakartaSans",
+        data: await readFile("./src/assets/font/PlusJakartaSans-Bold.ttf"),
+        weight: 900,
+        style: "normal",
+      },
+    ],
   };
 
   const svg = await satori(
