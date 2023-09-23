@@ -14,6 +14,10 @@ export const SOCIALS: SocialLink[] = [
     href: "https://github.com/Tom910",
   },
   {
+    name: "Telegram",
+    href: "https://t.me/andrey_marchenko_notes",
+  },
+  {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/andrey-marchenko-48b44b151/",
   },
