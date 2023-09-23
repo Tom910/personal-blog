@@ -1,6 +1,6 @@
 ---
 date: "2023-09-23"
-title: Rate Limiting What You Need
+title: Rate Limiting Is What You Need
 tags:
   - node.js
   - fastify
