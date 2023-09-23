@@ -42,7 +42,7 @@ An example of a load test of an application without using rate-limiting, which s
 
 ![what's happens without rate limit](/assets/article-rate-limiting/without-rate-limit.png)
 
-After reaching a certain RPC, the application simply stopped responding with 200 code ((2) green line at the bottom breaks off). As a result, 372 successful requests were made and 6364 were unsuccessful.
+After reaching a certain RPS, the application simply stopped responding with 200 code ((2) green line at the bottom breaks off). As a result, 372 successful requests were made and 6364 were unsuccessful.
 
 As a result, for users, the application is completely broken because requests are hanging in minute-long timeouts, users start refreshing/restarting applications, retries start to trigger, leading to even more traffic and the situation will only improve when the number of incoming requests will be less than the application can handle.
 
