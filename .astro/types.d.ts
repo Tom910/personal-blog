@@ -193,6 +193,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2023-09-26-versioning.md": {
+	id: "2023-09-26-versioning.md";
+  slug: "2023-09-26-versioning";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
