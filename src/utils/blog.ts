@@ -9,6 +9,8 @@ import { getCollection } from "astro:content";
  */
 export const getPostPath = (slug: string) => `/blog/${slug}`;
 
+export const getTranslatePath = (slug: string) => `/translate/${slug}`;
+
 /**
  * get n latest blog post or all blog posts sorted
  * by date descending
@@ -18,6 +20,16 @@ export const getPostPath = (slug: string) => `/blog/${slug}`;
  */
 export const getLatestPosts = async (count?: number) => {
   const blogs = await getCollection("blog");
+
+  blogs.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+  if (!count) return blogs;
+
+  return blogs.slice(0, count);
+};
+
+export const getLatestTranslatePosts = async (count?: number) => {
+  const blogs = await getCollection("translate");
 
   blogs.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
