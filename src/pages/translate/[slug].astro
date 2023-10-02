@@ -1,0 +1,20 @@
+---
+import BlogLayout from "@layouts/BlogLayout.astro";
+import { getLatestTranslatePosts } from "@utils/blog";
+
+export async function getStaticPaths() {
+  const blogs = await getLatestTranslatePosts();
+  return blogs.map(entry => ({
+    params: { slug: entry.slug }, // modify the default generated slug from astro-content
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+
+const { Content } = await entry.render();
+---
+
+<BlogLayout {...entry.data}>
+  <Content />
+</BlogLayout>

@@ -200,6 +200,22 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2023-10-02-network.md": {
+	id: "2023-10-02-network.md";
+  slug: "2023-10-02-network";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+};
+"translate": {
+"2023-10-02-network.md": {
+	id: "2023-10-02-network.md";
+  slug: "2023-10-02-network";
+  body: string;
+  collection: "translate";
+  data: InferEntrySchema<"translate">
+} & { render(): Render[".md"] };
 };
 
 	};

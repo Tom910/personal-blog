@@ -11,7 +11,13 @@ const project = defineCollection({
   schema: projectSchema,
 });
 
+const translate = defineCollection({
+  type: "content",
+  schema: blogSchema,
+});
+
 export const collections = {
   blog: blog,
   project: project,
+  translate: translate,
 };
