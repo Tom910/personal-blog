@@ -83,11 +83,11 @@ The most intriguing aspect of this algorithm is the Ghost queue. It only stores 
 This design prevents Popularity Attacks and protects the main queue from elements accessed only once.
 
 ### My Implementation
-
 ![s3-fifo implementation](/assets/article-memory-cache-1/s3-fifo-my-implementation.webp)
 
-My implementation relies on two data structures: a Map and 3 DoubleLinkedLists. The Map contains:
-- key = cache key,,
+
+[My implementation](https://github.com/Tom910/effective-cache) relies on two data structures: a Map and 3 DoubleLinkedLists. The Map contains:
+- key = cache key,
 - value = link to the DoubleLinkedList node (object).
 
 This setup ensures that all operations, whether adding, removing, or changing, have a time complexity of O(1). I use the DoubleLinkedList to determine the age of an element. Additionally, the DoubleLinkedList allows for the removal of nodes from the middle of the list in O(1) time.
@@ -125,7 +125,6 @@ This panel displays the object's connections, data types, hidden class creation 
 
 While this report wasn't immensely helpful this time, I plan to use it in future articles. A side note: if, for instance, an LRU cache is heavily used in a large application in many places, it might cause V8 deoptimizations, especially if get/set methods are invoked with varied object types, leading to method deoptimization.
 
-
 ## Comparing Cache Algorithms
 
 In the following section, I will compare s3-fifo with other renowned cache libraries in Node.js. Let's delve into their inner workings.
@@ -151,13 +150,11 @@ This is a fundamental and widely-used algorithm. For its implementation, you nee
 - For example: `lru-cache`, `tiny-lru`
 
 ## Benchmarks
-
 In general, cache memory can be measured by two parameters:
 - Speed
 - Hit rate
 
 ### Hit Rate
-
 The good news for me was that hit rate is very easy to measure and this number is stable. I also found a lot of trace logs from different companies on the Internet. Trace logs are information about how users access information. For example, what object was accessed in CDN (for example)
 
 ![Cache hit rate with 1000 cache size](/assets/article-memory-cache-1/benchmark-hit-rate-1000.png)
@@ -180,4 +177,4 @@ The size of s3-fifo is 2.3kb, which compresses down to 0.8kb after gzip. However
 
 ## Conclusion
 
-Initially, s3-fifo seemed promising, especially since [the document](https://blog.jasony.me/system/cache/2023/08/01/s3fifo) highlighted significant improvements over the LRU cache. However, my implementation didn't yield similar results. I also reviewed the [canonical implementation](https://github.com/cacheMon/py-cachemonCache) by the document's author and found comparable outcomes. On the other hand, I'm aware of another algorithm, `w-tiny-lfu`, which has been integrated into several high-speed cache libraries for Java, Golang, and Rust. It boasts impressive results, albeit being more intricate than s3-fifo. I plan to delve into this in a subsequent article.
+Initially, s3-fifo seemed promising, especially since [the document](https://blog.jasony.me/system/cache/2023/08/01/s3fifo) highlighted significant improvements over the LRU cache. However, [my implementation](https://github.com/Tom910/effective-cache) didn't yield similar results. I also reviewed the [canonical implementation](https://github.com/cacheMon/py-cachemonCache) by the document's author and found comparable outcomes. On the other hand, I'm aware of another algorithm, `w-tiny-lfu`, which has been integrated into several high-speed cache libraries for Java, Golang, and Rust. It boasts impressive results, albeit being more intricate than s3-fifo. I plan to delve into this in a subsequent article.
