@@ -7,7 +7,7 @@ tags:
 description: Cache is a crucial component of many systems. It helps reduce resource consumption and improves the timing of our systems. Often, I've observed the Node.js community focusing on the speed of cache algorithms. However, a cache algorithm primarily has two parameters - hit rate and speed.
 ---
 
-Cache is a crucial component of many systems. It helps reduce resource consumption and improves the timing of our systems. Often, I've observed the Node.js community focusing on the speed of cache algorithms. However, a cache algorithm primarily has two parameters: hit rate and speed. In this article, I will introduce a new cache algorithm, S3-fifo, which promises to enhance the cache rate compared to other popular cache algorithms. I will also identify potential deoptimizations in my code. This article will benefit those eager to learn more about caching and algorithms.
+Cache is a crucial component of many systems. It helps reduce resource consumption and improves the timing of our systems. Often, I've observed the Node.js community focusing on the speed of cache algorithms. However, a cache algorithm primarily has two parameters: hit rate and speed. In this article, I will introduce a new cache algorithm, S3-FIFO, which promises to enhance the cache rate compared to other popular cache algorithms. I will also identify potential deoptimizations in my code. This article will benefit those eager to learn more about caching and algorithms.
 
 ## What is Cache?
 
@@ -74,7 +74,7 @@ All new elements are first placed in the small queue. This helps mitigate Popula
 
 ### Main Queue
 
-This is the primary storage of S3-FIFO. It holds elements that have been accessed at least twice.
+This is the primary storage of `S3-FIFO`. It holds elements that have been accessed at least twice.
 
 ### Ghost Queue
 
@@ -157,6 +157,7 @@ In general, cache memory can be measured by two parameters:
 ### Hit Rate
 The good news for me was that hit rate is very easy to measure and this number is stable. I also found a lot of trace logs from different companies on the Internet. Trace logs are information about how users access information. For example, what object was accessed in CDN (for example)
 
+[Based on this code:](https://github.com/Tom910/effective-cache/blob/main/benchmark/hit-rate.ts)
 ![Cache hit rate with 1000 cache size](/assets/article-memory-cache-1/benchmark-hit-rate-1000.png)
 These are the results I got with a cache size of 1000. Total results (sum of all hits) `s3-fifo`=327, `lru-cache`=314, `quick-lru`=326, `tiny-lru`=314
 
