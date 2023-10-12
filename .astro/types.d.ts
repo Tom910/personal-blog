@@ -207,6 +207,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2023-10-12-memory-cache.md": {
+	id: "2023-10-12-memory-cache.md";
+  slug: "2023-10-12-memory-cache";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 "translate": {
 "2023-10-02-network.md": {
