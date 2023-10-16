@@ -53,6 +53,14 @@ const { title, date, tags } = Astro.props;
     data-lang="en"
     data-loading="lazy"
     crossorigin="anonymous"
-    async
-  ></script>
+    async></script>
+  <script>
+    // Only download the library if we need it.
+    if (document.querySelectorAll("main img").length) {
+      const zoom = (await import("medium-zoom")).default;
+      zoom("main img", {
+        container: document.body,
+      });
+    }
+  </script>
 </MainLayout>
