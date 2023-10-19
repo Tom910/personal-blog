@@ -54,6 +54,10 @@ Cache size has a significant effect on the percentage of hits. Insufficient cach
 
 I won't address this topic since Node.js doesn't present such challenges when designing cache structures. However, there have been instances where concurrency issues led to outages, as seen with [facebook](https://www.facebook.com/notes/10158791436142200/), [honeycomb](https://www.honeycomb.io/blog/postmortem-rds-clogs-cache-refresh-crash-loops), [coinbase](https://www.coinbase.com/blog/incident-post-mortem-june-25-26-2019)
 
+### Not hitting caches
+
+Some changes can create a situation where you had a 95% cache hit, but after the change the cache hit is down to 50%. Thus, you need to have a lot of new resources to handle this traffic. In general, the cache makes resource scheduling more difficult.
+
 ## S3-FIFO Cache Algorithm
 
 ![S3-FIFO cache algorithm](/assets/article-memory-cache-1/s3-fifo-overview.webp)
