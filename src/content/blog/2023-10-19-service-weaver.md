@@ -58,10 +58,10 @@ Service Weaver is a new framework for Go from Google Cloud that has some good id
 ### Overview of Service Weaver
 ![Overview of Service Weaver](/assets/article-service-weaver/service-weaver-overview.webp)
 
-- **Monorepo per project:** The monorepo has many components that share typings between components. Every change in contracts will be validated.
-- **Build process:** All components are compiled into one binary file and K8S manifests with specifications of all components as separate deployments. Also, we can run the whole system locally as a single binary.
-- Every pod runs the same binary with different configuration.
-- We can configure how our application can be spliced into different K8S deployments.
+- **Monorepo per project:** All codebase is stored in one repository. Each component is isolated from each other and can be developed independently. But components reuse typings, which help to validate contracts in compile time. And also, this helps to solve the problem with cross-service changes.
+- **Build process:** Service Weaver has CLI tooling for building, generating manifests, and deploying applications. It is not unusual, because frameworks usually only solve code level problems. But it helps to implement different strategies for deploying/running components. Service Weaver generates one binary file that can be reused in all applications.
+- **Running:** Service Weaver generates K8S manifests with specifications of all components as groups that run in separate deployments. In config files, we can define external endpoints that implement HTTP routing and will be accessible from outside. And internal components that can be reused by other components.
+- **Running:** All pods run the same Docker image. Based on configuration, Service Weaver recreates the schema of the project and determines which components are deployed.
 
 ### Running components
 
