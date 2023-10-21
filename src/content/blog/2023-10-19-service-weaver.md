@@ -60,7 +60,7 @@ Service Weaver is a new framework for Go from Google Cloud that has some good id
 
 - **Monorepo per project:** All codebase is stored in one repository. Each component is isolated from each other and can be developed independently. But components reuse typings, which help to validate contracts in compile time. And also, this helps to solve the problem with cross-service changes.
 - **Build process:** Service Weaver has CLI tooling for building, generating manifests, and deploying applications. It is not unusual, because frameworks usually only solve code level problems. But it helps to implement different strategies for deploying/running components. Service Weaver generates one binary file that can be reused in all applications.
-- **Running:** Service Weaver generates K8S manifests with specifications of all components as groups that run in separate deployments. In config files, we can define external endpoints that implement HTTP routing and will be accessible from outside. And internal components that can be reused by other components.
+- **Building:** Service Weaver generates K8S manifests with specifications of all components as groups that run in separate deployments. In config files, we can define external endpoints that implement HTTP routing and will be accessible from outside. And internal components that can be reused by other components.
 - **Running:** All pods run the same Docker image. Based on configuration, Service Weaver recreates the schema of the project and determines which components are deployed.
 
 ### Running components
@@ -85,6 +85,8 @@ colocate = [
 This can help us create groups of similar components that communicate a lot with each other and run in one process without HTTP requests. It will save some additional resources and improve stability.
 
 Teams create separate components, but choosing how they will be run can be done later. Also, it helps us when we start, we can start with running as a single monolith, but later split into many servers.
+
+Another interesting point is that Service Weaver does a lot of things for infrastructure. Usually frameworks don't provide infrastructure solutions, but Service Weaver provides a lot of tools for deploying, running, and monitoring components. There's nothing unusual about that.
 
 ### Communication between components
 ![communication between components of Service Weaver](/assets/article-service-weaver/service-weaver-communicating.webp)
@@ -130,4 +132,4 @@ That's all
 
 ## Conclusion
 
-I really like this new approach, because it solves many problems with microservices and adds flexibility with choosing how I want to run them. This approach is suitable only for small/mid-sized projects, not for big companies or very large projects. But I would try to use this approach in my next project. Also, Service Weaver provides an interesting idea related to the deployment model which I may mention in one of my next articles.
+I really like this new approach, because it solves many problems with microservices and adds flexibility with choosing how I want to run them. This approach is suitable only for small/mid-sized projects, not for big companies or very large projects. But I would try to use this approach in my next project. Also, Service Weaver provides an interesting idea related to the deployment model (blue green with autoscaling) which I may mention in one of my next articles.
