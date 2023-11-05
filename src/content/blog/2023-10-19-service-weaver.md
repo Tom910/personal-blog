@@ -136,4 +136,4 @@ I really like this new approach, because it solves many problems with microservi
 
 ## Additional materials
 - [Service Weaver](https://serviceweaver.dev/)
-- A new paper `Towards Modern Development of Cloud Applications` from Google Cloud https://sigops.org/s/conferences/hotos/2023/papers/ghemawat.pdf (which was created after this post)
+- [A new paper `Towards Modern Development of Cloud Applications` from Google Cloud](https://sigops.org/s/conferences/hotos/2023/papers/ghemawat.pdf) (which was created after this post)
