@@ -133,3 +133,7 @@ That's all
 ## Conclusion
 
 I really like this new approach, because it solves many problems with microservices and adds flexibility with choosing how I want to run them. This approach is suitable only for small/mid-sized projects, not for big companies or very large projects. But I would try to use this approach in my next project. Also, Service Weaver provides an interesting idea related to the deployment model (blue green with autoscaling) which I may mention in one of my next articles.
+
+## Additional materials
+- [Service Weaver](https://serviceweaver.dev/)
+- A new paper `Towards Modern Development of Cloud Applications` from Google Cloud https://sigops.org/s/conferences/hotos/2023/papers/ghemawat.pdf (which was created after this post)
