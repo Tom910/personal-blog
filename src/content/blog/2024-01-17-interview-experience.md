@@ -10,13 +10,13 @@ I have tried to pass interviews at FAANG companies three times. Each time, I inc
 
 ## Luck as an important aspect of interviews
 
-Luck is an important aspect of any interview. It's like a game of Baldur's Gate 3 where every time you roll the die, you could have a critical fail and fail any possible interview. This could happen, for example, because the interview has a bad mod, the task is hard and uses new approaches for you. Maybe they have already chosen another candidate and your interview is just a part of the process which they cannot skip. There are hundreds of reasons why we can fail an interview.
+Luck is an important aspect of any interview. It's like a game of Baldur's Gate 3 where every time you roll the die, you could have a critical fail and fail any possible interview. This could happen, for example, because an interviewer in a bad mood, the task is hard and requires approaches that are new for you. Maybe they have already chosen another candidate and your interview is just a part of the process which they cannot skip. There are hundreds of reasons why we can fail an interview.
 
 So, rejection is a normal part of the interview process. You need to work on yourself so that failure does not affect you. Because any interview is a good experience for you. You can learn something new about yourself, your skills, and your knowledge. This helps you improve yourself and your skills, which improves your chances of passing the next interview.
 
 ## Preparation is a key aspect of interviews
 
-Unfortunately, preparation is a key aspect for passing the interview process at a high level in top companies. I am almost certain that the average FAANG engineer who has worked for more than 10 years cannot pass the interview process of their company without preparation. Only a limited amount of positions requires a lot of tasks related to algorithms and system design tasks which are used in interviews.
+Unfortunately, preparation is a key aspect for passing the interview process at a high level in top companies. I am almost certain that the average FAANG engineer who has worked for more than 10 years cannot pass the interview process of their company without preparation. Only a limited amount of positions assumes a lot of tasks related to algorithms and system design which are used in interviews.
 
 In one of my previous companies, I was an interviewer for four years with more than 200 interviews. I often asked candidates about their preparations, algorithms, and LeetCode problems. I used this knowledge to adapt the first task for a candidate. In reality, if a candidate did not prepare for the interview, they had a small chance to pass the interview on a medium+ level, even if they had 10 years of experience. I saw many times when a candidate knew the theory, for example, how binary search works, but they could not implement it. Because if they learned something 5-10-15 years ago and did not use it, they only remembered the high-level theory. So, it is better to prepare for the interview.
 
@@ -24,12 +24,12 @@ Also, as a part of preparation, it is important to understand the requirements o
 
 ## Level of English
 
-It is a super important topic for me as a non-native speaker. Previously, I read that a good level of English is not important for the interview process. But it is only a little true. Yes, you have a chance to pass the interview with bad English, but you significantly decrease your chance to pass it. Because problems happen at all steps of the interview process:
+It is a super important topic for me as a non-native speaker. Previously, I read that a good level of English is not important for the interview process. Not exactly. Yes, you have a chance to pass the interview with bad English, but you significantly decrease your chance to pass it. Because problems happen at all steps of the interview process:
 
 ### Coding parts
 Some companies use long grids text for coding tasks, and you need to read and understand them. It's hard to do this with bad English and without translation applications. You also need to be able to speak about your task, how you solved it, what its complexity is, and so on. All of this requires communication and the ability to understand what the interviewer says. Once, I had a problem with a task that used the word "produce" in its description. Originally, I thought that "produce" was a variation of "sum."
 
-Also, the interviewer would try to help you when you are stuck. But do you understand this help?
+Also, the interviewer would try to help you when you are stuck. But can you understand this help?
 
 ### System design parts
 
@@ -39,12 +39,12 @@ In fact, it is a 35-minute presentation. The core part of this interview is your
 
 Also, present yourself. You need to be able to talk about your experience, your projects, your team, and so on. All of this requires a basic level of English. For example, one company did not offer me a job because I sometimes stammered in my answers to the manager. I passed all other interviews in this company with good feedback, but the manager wasn't sure if I would communicate effectively in a team.
 
-Overall, problems with English create problems for you and for the interviewer:
+Overall, your English level may create problems for you and for the interviewer::
 - For you - you spend a lot of energy speaking. Any stressful situation decreases your ability to speak.
 - For the interviewer - they spend additional energy to understand you, and when they can't understand you, they might make a decision that you are not suitable for that role.
 
 What works for me:
-- A lot of sessions with an English teacher. I have had 2-3 sessions per week for the last 5 years. Five years ago, I didn't speak English at all because I didn't learn English at school or university. An English teacher can also help you with the behavioral part of the interview. They can help you check your answers, improve the structure of an answer, and adapt the next lessons to improve those aspects. My teacher asked me maybe 50+ behavioral questions.
+- A lot of sessions with my English teacher. I have had 2-3 sessions per week for the last 5 years. Five years ago, I didn't speak English at all because I didn't learn it at school or university. An English teacher can also help you with the behavioral part of the interview. They can help you check your answers, improve the structure of an answer, and adapt the next lessons to improve those aspects. My teacher asked me maybe 50+ behavioral questions.
 - A good microphone. It's worth spending money on a good microphone because the interviewer will spend less energy on understanding you.
 - Consume English content. When possible, I switch to English. Also, this blog is a part of my effort to improve my writing skills.
 
@@ -64,7 +64,7 @@ The level of the company affects the interview process a lot. Because the most a
 I have had experiences with level 3-4 companies. They have coding sections where they expect you to write a for loop and perform simple operations like increasing or multiplying numbers. These tasks are similar to the easy tasks on LeetCode. Every time, I was confused at first because I didn't expect it to be so easy. But it is.
 
 Different companies have different levels of complexity in their interviews and expectations from candidates. 
-- Level 1 and 2 - they have a list of things that an ideal candidate should do. They expect that you will do most of them. However, it is interesting to note that different companies have different lists of things. For example, one company expects you to cover all edge cases in your code, while another expects you to drive system design interviews. Another company expects you to write production-ready names of variables, while yet another expects good answers to behavioral questions in coding interviews. Therefore, it is better to understand what a company expects from you to increase your chances.
+- Level 1 and 2 - they have a list of things that an ideal candidate should do. They expect that you will do most of them. However, it is interesting to note that different companies have different lists of things. For example, one company expects you to cover all edge cases in your code, while another expects you to drive system design interviews. Another company expects you to write production-ready names of variables, while yet another expects good answers to behavioral questions on coding interviews. Therefore, it is better to understand what company expects from you to increase your chances.
 - Level 3 and 4 - usually, they don't have additional materials for the interview, and it is hard to find experience from other candidates. However, they usually don't have strict requirements.
 
 ## There is no standardised interview process
@@ -79,7 +79,7 @@ Most companies adapt tasks for web-specific topics, but not all. Here’s what y
 - Without difference, like Google, which asked just algorithmic tasks, the same as on Backend role.
 
 ### Backend role
-The most standard interview process, in my opinion, is the Backend role. You need to solve algorithmic tasks and typical system design tasks.
+The most standardized interview process, in my opinion, is for the Backend SWE role. You need to solve algorithmic tasks and typical system design tasks.
 
 ### Full-stack role
 Usually, it is the same as the Backend role. Many companies don’t ask anything related to web topics.
@@ -176,7 +176,7 @@ In this section, it is very important to provide stories relative to your target
 
 ### My Preparation for Behavioral Interviews
 
-Preparation is an important part because the interviewer expects stories in STAR format. I actually use a format more close to RSTAR when I also cover my role in this story. Also, preparation is needed because if I just ask you about the most interesting project, you will probably answer in a natural way which will not cover all aspects that the interviewer expects from you. So, it is better to prepare stories and practice them.
+Preparation is an important part because the interviewer expects stories in STAR format. The STAR format stands for Situation, Task, Action, and Result. However, I added a letter R (Role) to the STAR format (RSTAR) to also cover my role in this story, what exactly I have done in a project, and my personal results. Also, preparation is needed because if I just ask you about the most interesting project, you will probably answer in a natural way which will not cover all aspects that the interviewer expects from you. So, it is better to prepare stories and practice them.
 
 I prepared more than 20 stories from my experience.
 
