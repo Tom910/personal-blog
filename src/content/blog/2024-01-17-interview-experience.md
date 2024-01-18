@@ -74,7 +74,7 @@ In my experience, I have had interview processes for three different roles: Fron
 ### Frontend role
 Most companies adapt tasks for web-specific topics, but not all. Here’s what you can expect:
 
-- In common cases, you will solve tasks related to web-specific topics like writing a simple React application, writing a function that uses web API for animation, CSS, accessibility, HTML (without theoretical questions), and typical [BFE tasks](bigfrontend.dev). On system design, you need to design a component.
+- In common cases, you will solve tasks related to web-specific topics like writing a simple React application, writing a function that uses web API for animation, CSS, accessibility, HTML (without theoretical questions), and typical [BFE tasks](https://bigfrontend.dev). On system design, you need to design a component.
 - In more complex cases, you will write tasks like writing a Minesweeper game. Your goal is to understand how to implement logic for 35 minutes. This task has an algorithmic part like matrix traversal (BFS/DFS), but usually without complex algorithms. On system design, you need to design a web application with knowledge of typical system design.
 - Without difference, like Google, which asked just algorithmic tasks, the same as on Backend role.
 
