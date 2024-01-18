@@ -89,34 +89,34 @@ Usually, it is the same as the Backend role. Many companies don’t ask anything
 ![levels of companies](/assets/article-interview/coding-step.webp)
 
 
-In general, it is algorithmic tasks. When you need to understand the problem, find a good solution, and write code. But as usual, it’s not all simple. Usually, companies have a checklist of things they expect from you in this section. For example:
+In general, it is algorithmic tasks. When you need to understand the problem, find a good solution, and write code. But as usual, it’s not that simple. Usually, companies have a checklist of things they expect from you in this section. For example:
 
 - Communication - How do you discuss this task? Do you ask enough questions?
 - Problem-solving - How do you solve this task? Can you find a good solution?
 - Coding - How do you write code? Can you write code without mistakes? How fast can you write code? What is the quality of your code?
 - Testing - Can you test your code? Does it contain bugs?
 
-You cannot start writing code immediately after receiving a task. You will not cover all aspects. It is better to have a style of solving tasks that covers all of these points. Here is the style I use:
+You cannot start writing code immediately after receiving a task. You will not cover all aspects. It is better to have a style of solving tasks that covers all of these points. Here is my approach:
 - Read and understand the task. Also, ask questions about constraints and edge cases.
 - Retell the task in your own words.
 - Write input and output data and recheck it with the interviewer.
 - Tell the idea of how you will solve this task with the complexity of the solution.
 - Write code.
-- Inline debug in code without running code.
-- Collect the final complexity of the solution.
+- Debug you code line by line without running it.
+- Tell the final complexity of the solution.
 - Move to the next task.
 
-Usually, you have less than 40 minutes to solve 2 tasks. So, you need to prepare to do it fast because any problems, and you will be out of time. In level 1-2 companies, they usually ask 2 medium or 1 medium and 1 hard leetcode task. Sometimes 2 hard tasks -_- but not often. So, you need to be able to solve medium tasks in less than 20 minutes.
+Usually, you have less than 40 minutes to solve 2 tasks. So, you need to prepare to do it fast because any problem may be the reason you’re out of time. In level 1-2 companies, they usually ask 2 medium or 1 medium and 1 hard Leetcode task. Sometimes even 2 hard problems -_- but not often. So, you need to be able to solve medium tasks in less than 20 minutes.
 
-Some companies expect that you will write code that will pass tests. So, you need to be able to write working code and have excellent skills in your language (you can choose on the interview). Because every minute you spend on debugging is a minute that you don't have for solving the next task.
+Some companies expect that you will write code that will pass tests. So, you need to be able to write working code and have excellent skills in your programming language (you can choose on the interview). Because every minute you spend on debugging is a minute that you don't have for solving the next task.
 
-Some companies also have variations of coding interviews like object design interviews. When you need to design classes and connections between them. But I didn't have this experience and didn't prepare for it.
+Also you can meet one more variation of coding interviews like object design interviews. It’s when you need to design classes and connections between them. But I didn't have this experience and didn't prepare for it.
 
 Some companies have different lists of topics for coding interviews. For example, a company can ban any DP tasks, and you will not have them (thank them for that). Or a company usually asks graph/tree tasks, or tasks over strings/numbers or mathematical tasks. Again, preparation is a key aspect of increasing your chance to pass the interview.
 
 ### My preparation for Coding interviews
 
-As an example, I have solved a total of 175 LeetCode tasks (52 easy, 106 medium, 17 hard) (some tasks I have already solved 3+ times). I also have an additional repository where I solve tasks that don't have leetcode or are under premium with 80 solved tasks. Additionally, I passed courses related to algorithmics and watched a lot of videos about algorithms. As a recommendation, prepare by a list of important tasks like [blind 75](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions) and [similar lists based on algorithmic approaches](https://dev.to/codinglanguages/how-to-learn-not-memorize-any-algorithm-or-data-structure-analysis-of-20-problem-solving-techniques-you-must-know-d77).
+As an example, I have solved a total of 175 LeetCode tasks (52 easy, 106 medium, 17 hard) (some tasks I have already solved 3+ times). I also have an additional repository where I solve tasks that don't have Leetcode or are under premium with 80 solved tasks. Additionally, I passed courses related to algorithmics and watched a lot of videos about algorithms. As a recommendation, prepare by a list of important tasks like [blind 75](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions) and [similar lists based on algorithmic approaches](https://dev.to/codinglanguages/how-to-learn-not-memorize-any-algorithm-or-data-structure-analysis-of-20-problem-solving-techniques-you-must-know-d77).
 
 ## System design interviews
 
@@ -124,7 +124,7 @@ As an example, I have solved a total of 175 LeetCode tasks (52 easy, 106 medium,
 
 The most interesting and useful part of the interview process is preparing and solving System Design tasks, which made me much better in understanding how different systems work. Because usually at work, you have a couple of problems, and you know them well. But in an interview, you need to be able to solve and understand problems of systems that you don't know. For example, creating a Messenger.
 
-System Design is a critical interview if you want to pass senior or staff level. Usually, System Design and Behavioral show your final level. Coding is usually the same for middle-staff levels, but from system design, the company expects that you provide signals of senior/staff level.
+System Design is a critical interview if you want to pass senior or staff level. Usually, System Design and Behavioral show your final level. Coding is usually the same for middle-staff levels, but on system design the company expects that you provide signals of senior/staff level.
 
 Different roles have different sections. Examples of sections which I had:
 - Frontend System Design,
@@ -156,11 +156,13 @@ Also, important:
 - Provide alternatives and reasons to choose technology A over technology B.
 
 
-But in reality, some interviewers had their own structure, and I changed and adapted this structure to their requirements. But it created problems because without structure, I sometimes forgot to cover some aspects.
+But in reality, some interviewers had their own structure, and I changed and adapted mine to their requirements. But it created problems because without structure, I sometimes forgot to cover some aspects.
 
 ### My Preparation for System Design
 
 There are many videos and materials about System Design available on the internet that are suitable for middle levels. For senior/staff level positions, you need to have more in-depth knowledge. The key is to filter content and search for specific authors or read company blogs/public speeches of engineers from the company you want to prepare for. You can also debug an example of a site. For example, if you want to understand how to implement a Netflix clone, you can read a blog, find public talks, and debug the Netflix site.
+
+I also participated in a mock system design interview. You can find a partner who is also preparing for a system design interview and emulate a real interview. The mock interview will help you get a feel for the format of the section, learn to keep to time, and receive feedback from the interviewer. I have purchased one paid mock interview and completed many free mock interviews. You can find people who want to prepare for a system design interview in groups or sites related to interview preparation.
 
 As an example, I solved a total of 25 different System Design problems with an understanding of the main problems and challenges. It helped me a lot to understand different patterns and how really popular systems work inside.
 
