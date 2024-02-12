@@ -1,6 +1,6 @@
 ---
 date: "2024-01-17"
-title: Cracking the FAANG Interview. My experience and recommendations
+title: Cracking the FAANG Interview. My experience and recommendations in 2024
 tags:
   - interview
 description: I have tried to pass interviews at FAANG companies three times. Each time, I increased the amount of time I spent preparing for the interview. Over the years, I have read and watched a lot of information related to interview preparation. In this article, I want to cover some of the aspects which I found useful in my journey.
