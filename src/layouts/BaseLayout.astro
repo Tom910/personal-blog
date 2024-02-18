@@ -10,16 +10,18 @@ const { title, description } = Astro.props;
 
 const ogImage = new URL(getOgImagePath(Astro.url.pathname), Astro.url.origin)
   .href;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 
 const fullTitle = `${title && `${title} - `}${SITE.title}`;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
 
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
