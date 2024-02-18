@@ -7,9 +7,9 @@ import { getCollection } from "astro:content";
  * @param slug
  * @returns
  */
-export const getPostPath = (slug: string) => `/blog/${slug}`;
+export const getPostPath = (slug: string) => `/blog/${slug}/`;
 
-export const getTranslatePath = (slug: string) => `/translate/${slug}`;
+export const getTranslatePath = (slug: string) => `/translate/${slug}/`;
 
 /**
  * get n latest blog post or all blog posts sorted
