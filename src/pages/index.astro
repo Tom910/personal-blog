@@ -21,7 +21,7 @@ const totalPost = await getTotalPosts();
       {posts.map(post => <BlogItem slug={post.slug} {...post.data} />)}
     </ul>
     <div class="text-gray-700">
-      <a href="/blog" class="text-sm flex items-center">
+      <a href="/blog/" class="text-sm flex items-center">
         <span>See All Posts</span>
         <Icon class="w-4 ml-2" name="ph:arrow-right" />
       </a>

@@ -6,7 +6,7 @@ interface TagProps {
 }
 
 const Tag: FC<TagProps> = ({ tag, className }) => (
-  <a href={`/tags/${tag}`}>
+  <a href={`/tags/${tag}/`}>
     <div className={`flex items-center ${className}`}>
       <div className="bg-gray-800 text-white text-xs font-bold font-mono py-0.5 px-2 cursor-pointer select-none">
         {tag}
