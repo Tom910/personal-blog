@@ -235,6 +235,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2024-05-08-technology-radar-30.md": {
+	id: "2024-05-08-technology-radar-30.md";
+  slug: "2024-05-08-technology-radar-30";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 "translate": {
 "2023-10-02-network.md": {
