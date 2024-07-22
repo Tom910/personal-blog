@@ -149,7 +149,7 @@ Edge computing can also be used for P2P communication between two clients withou
 - Akamai: As one of the world's largest content delivery network (CDN) providers, Akamai uses thousands of edge servers worldwide to deliver web content, media, and software downloads.
 - Fastly: Another CDN/Edge provider, The New York Times uses Fastly to deliver breaking news updates and personalized content recommendations faster
 - Cloudflare Workers: This platform allows developers to run serverless code at the edge. For example, the messaging app Discord uses Cloudflare Workers to route API requests to the nearest data center.
-- Amazon CloudFront with Lambda@Edge: This combination allows developers to run Node.js functions at AWS Edge locations cross world.
+- Amazon CloudFront Functions: Technology helps modify responses, verify authorization
 
 ## Conclusion
 
