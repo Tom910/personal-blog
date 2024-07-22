@@ -242,6 +242,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2024-07-22-edge-netwook.md": {
+	id: "2024-07-22-edge-netwook.md";
+  slug: "2024-07-22-edge-netwook";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 "translate": {
 "2023-10-02-network.md": {
