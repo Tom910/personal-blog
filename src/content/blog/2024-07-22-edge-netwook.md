@@ -85,6 +85,9 @@ Here's how it looks using [Google as an example:](https://cloud.google.com/blog/
 
 They use Edge nodes (grey dots), Edge POPs (red dots), and private networks (blue lines). Similar architecture is also used by other companies like [AWS](https://blog.awsfundamentals.com/aws-edge-locations), Meta, Cloudflare, Akamai, etc.
 
+### Differences From CDN
+
+In fact, advanced CDNs are part of Edge technologies. Many large CDN providers such as Akamai, AWS, Cloudflare have transformed their CDN network into a shared Edge network. CDN focuses on delivering content to users, to reduce timings, CDN must have points very close to users, as a result it creates the need to create thousands of points close to users. But that's already an Edge. So basically CDN is part of Edge and can be implemented in Edge Computing and Edge Storage.
 
 ### How Can a Client Find an Edge Server?
 
