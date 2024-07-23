@@ -59,18 +59,19 @@ To address these issues, big companies created Edge technology, which added addi
 - Several racks containing 5-20 servers
 - Thousands of points across the world
 
-ISP Tier 3 providers usually don't have a lot of space or power for hardware, so they have limits on the number of servers. But companies can create edge nodes across the world in very remote locations that don't have any data centers close to customers. Edge nodes manage connections, run custom computing (cache, compute functions, security), and can store data on disks. Inside, they're typical servers with disks for data.
+ISP Tier 3 providers usually don't have a lot of space or power for hardware, so they have limits on the number of servers they can host. However, companies can create edge nodes across the world in very remote locations that don't have any data centers close to customers. Edge nodes manage connections, run custom computing (cache, compute functions, security), and can store data on disks. Inside, they're typical racks with servers: network hardware that can handle the incoming traffic and proxy between servers, typical Intel servers, and storage servers with many disks. ISP Tier 3 operators receive all of this equipment as large boxes which they simply connect to power and internet.
 
-Edge Nodes are connected to Edge POPs using shared internet connections. In addition, Edge nodes are hosted in less controlled environments, which creates limitations on the storage of protected data.
+
+Edge Nodes are connected to Edge POPs using shared internet connections. Additionally, Edge nodes are often hosted in less controlled environments, which creates limitations on the storage of protected data.
 
 #### Edge POP
 
 - Many racks containing 100-300 servers
 - Hundreds of points across the world
 
-Companies have a limited number of data centers because, in reality, they need to create not a single data center but a region with three data centers that are close to each other. This requires special sources of energy and internet connections. But they need to have big points of traffic to connect many Edge Nodes and be a point for popular content in the region. It isn't a data center, but it still has hundreds of servers inside.
+Companies have a limited number of data centers because, in reality, they need to create not just a single data center but a region with three data centers that are close to each other. This requires special sources of energy and internet connections for hundreds of thousands of servers. At the same time, countries have many ISP Tier 3 providers and numerous Edge nodes. To reduce similar traffic and create large data points for each location, companies have developed Edge POPs (Points of Presence). These Edge POPs contain hundreds of servers and can store a significant amount of data, serving as a sharing point between other Edge nodes. As a result, many Edge nodes are connected to the closest Edge POP, which in turn is connected to Data Centers. Inside an Edge POP, you'll find the same types of servers as in an Edge Node - network hardware, typical servers, and disks for storing data - but in much greater numbers.
 
-Edge POPs are connected to other Edge POP nodes and nearby data centers/regions using private networks.
+Edge POPs are connected to other Edge POP nodes and nearby data centers/regions using private networks. In general, an Edge POP is very similar to an Edge Node but operates on a much larger scale. Edge Node and Edge POP typically only store data temporarily, such as a cache that can be deleted at any time. Companies still use data centers for long-term data storage.
 
 #### Private networks 
 Globally, we have shared internet connections provided by ISP Tier 1 level companies. These connections are used by small companies, and all packages have the same priority. Because it's a shared network, it has bandwidth limits and sometimes has latency problems. To handle this issue, big companies create their own private networks which they can use only for their purposes. This helps them:
